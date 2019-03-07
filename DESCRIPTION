@@ -1,7 +1,7 @@
 Package: STV
 Type: Package
 Title: Single Transferable Vote Counting
-Version: 1.0.0
+Version: 1.0.1
 Authors@R: c(
     person("John", "Emerson", email = "john.emerson@yale.edu", role = c("cre", "aut")),
     person("Saksham", "Chandra", role = "aut"),
@@ -24,7 +24,7 @@ LazyData: true
 Suggests: testthat, crayon
 RoxygenNote: 6.0.1
 NeedsCompilation: no
-Packaged: 2018-03-21 16:27:58 UTC; jay
+Packaged: 2019-03-07 20:54:32 UTC; jay
 Author: John Emerson [cre, aut],
   Saksham Chandra [aut],
   Lilla Orr [aut],
@@ -34,4 +34,4 @@ Author: John Emerson [cre, aut],
   Shylee Ezroni [ctb],
   Junchao Ma [ctb]
 Repository: CRAN
-Date/Publication: 2018-03-23 08:59:17 UTC
+Date/Publication: 2019-03-07 21:22:51 UTC

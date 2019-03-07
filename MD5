@@ -1,6 +1,6 @@
-641bf68ea80bf839e3902b9e5d41649c *DESCRIPTION
+c20f93ebd04bf8c685ee30acb5d05891 *DESCRIPTION
 1a79b804482d68ceabbb570e1c3b506f *NAMESPACE
-46f9de0c9618f3f3b58091d40a5430c3 *NEWS.md
+8381d2c3e3646938b0b3e29980d3c23a *NEWS.md
 e401c3d70212672e886b1aea09cc4273 *R/STV-package.R
 1557dc3ec9099f47711122dafd54fe0b *R/stv.R
 87f914441d5cc51ebe90de7ac059bf38 *R/validate_clean_ballots.R
@@ -13,4 +13,4 @@ df5b27f4ed5115d4b1aaa1a6c8b4791a *inst/CITATION
 fec4dd73fac0cbf9d238917cd77fb7e9 *man/stv.Rd
 4157a0c1a4087668f3d0c6fb46a44549 *man/validateBallots.Rd
 a21bb129ecf63ca22e0da192dbbf9447 *tests/test-all.R
-fb03f9fa1a4cbe79623289e25260c9fc *tests/testthat/testExt.R
+6ece58874728228a5c10eed6268db83d *tests/testthat/testExt.R
