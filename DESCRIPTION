@@ -1,7 +1,7 @@
 Package: STV
 Type: Package
 Title: Single Transferable Vote Counting
-Version: 1.0.2
+Version: 1.0.3
 Authors@R: c(
     person("John", "Emerson", email = "john.emerson@yale.edu", role = c("cre", "aut")),
     person("Saksham", "Chandra", role = "aut"),
@@ -20,11 +20,12 @@ Description: Implementations of the Single Transferable Vote counting
     and the Hare quota are available as options.
 License: LGPL-3
 Encoding: UTF-8
+Imports: methods
 LazyData: true
 Suggests: testthat, crayon
-RoxygenNote: 7.1.0
+RoxygenNote: 7.3.2
 NeedsCompilation: no
-Packaged: 2021-02-01 00:13:00 UTC; jay
+Packaged: 2025-05-20 18:55:10 UTC; jay
 Author: John Emerson [cre, aut],
   Saksham Chandra [aut],
   Lilla Orr [aut],
@@ -34,4 +35,4 @@ Author: John Emerson [cre, aut],
   Shylee Ezroni [ctb],
   Junchao Ma [ctb]
 Repository: CRAN
-Date/Publication: 2021-02-01 15:30:10 UTC
+Date/Publication: 2025-05-20 19:10:07 UTC

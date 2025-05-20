@@ -2,10 +2,19 @@
 % Please edit documentation in R/STV-package.R
 \docType{package}
 \name{STV-package}
+\alias{STV}
 \alias{STV-package}
 \title{STV Vote Counting}
 \description{
 Functions in this package are designed to clean, validate, and count single transferable votes.
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/jayemerson/STV}
+  \item Report bugs at \url{https://github.com/jayemerson/STV/issues}
+}
+
 }
 \author{
 Jay Emerson (expand this)

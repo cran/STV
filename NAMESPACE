@@ -3,5 +3,6 @@
 export(cleanBallots)
 export(stv)
 export(validateBallots)
+importFrom(methods,is)
 importFrom(utils,tail)
 importFrom(utils,write.table)

@@ -33,9 +33,9 @@
 validateBallots <- function(x) {
 
   # 1. Allowed Class: data.frame
-  if (class(x) != "data.frame") 
-    stop("\nPlease enter object of class data.frame, or use cleanBallots().")
-
+  #if (class(x) != "data.frame") stop("\n1 Please enter object of class data.frame, or use cleanBallots().")
+  if (!is.data.frame(x)) stop("\n1 Please enter object of class data.frame, or use cleanBallots().")
+  
   # 2. Check sanity of column names:
   if(is.null(names(x))) 
     stop("\nPlease provide each candidate's name/identifier as column names.")
@@ -124,10 +124,11 @@ cleanBallots <- function(x, cand.names = NULL) {
 
   # 1. Check if input: matrix or data.frame, convert matrix into data.frame
   if (!(class(x) %in% c("data.frame", "matrix"))) {
-    stop("\nPlease enter object of class either data frame or matrix.")
+    stop("\n2 Please enter object of class either data frame or matrix.")
   }
-  if (class(x) == "matrix") x <- as.data.frame(x, stringsAsFactors = FALSE)
-
+  #if (class(x) == "matrix") x <- as.data.frame(x, stringsAsFactors = FALSE)
+  if (is.matrix(x)) x <- as.data.frame(x, stringsAsFactors = FALSE)
+  
   # 2. Check if x is numeric:
   cols.non.numeric <- !sapply(x, is.numeric)
   if (any(cols.non.numeric)) {
@@ -172,8 +173,10 @@ cleanBallots <- function(x, cand.names = NULL) {
     x[i,] <- rank(x[i,], na.last="keep")
   }
 
-  if (class(try(validateBallots(x))) == "try-error")
-    warning("Validation failed the validateBallots() check")
+  junk <- try(validateBallots(x))
+  if (is(junk, "try-error")) warning("Validation failed the validateBallots() check")
+  #if (class(try(validateBallots(x))) == "try-error") warning("Validation failed the validateBallots() check")
+
   return(x)
 }
 
